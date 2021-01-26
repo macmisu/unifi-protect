@@ -2,7 +2,7 @@ version: '2'
 
 services:
   unifi-protect:
-    image: unifi-protect
+    build: .
     volumes:
       - /mnt/ssd/unifi-protect/data:/srv/unifi-protect
       - /mnt/ssd/unifi-protect/db:/var/lib/postgresql/10/main
